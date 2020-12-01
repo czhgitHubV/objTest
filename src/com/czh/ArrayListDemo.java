@@ -60,7 +60,20 @@ public class ArrayListDemo {
         }
         Collections.sort(bli);
         System.out.println(bli);*/
-        fun2();
+        fun3();
+    }
+
+    static void fun3(){
+        ArrayList<Integer> a1=new ArrayList<Integer>();
+        a1.add(213);
+        a1.add(2);
+        a1.add(45);
+        a1.add(2133);
+        a1.add(67);
+//        Collections.sort(a1);//顺序
+        System.out.println(a1);
+        Collections.sort(a1,Collections.reverseOrder());//倒序
+        System.out.println(a1);
     }
 
     static void fun2(){
