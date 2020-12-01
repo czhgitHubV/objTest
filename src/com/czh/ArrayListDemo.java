@@ -10,7 +10,40 @@ import java.util.stream.Collectors;
  **/
 public class ArrayListDemo {
     public static void main(String[] args) {
-//        ArrayList<String> list=new ArrayList<String>();
+        fun5();
+    }
+
+    //比较两个ArrayList
+    static void fun6(){
+        ArrayList<String> al1= new ArrayList<String>();
+        al1.add("hi");
+        al1.add("How are you");
+        al1.add("Good Morning");
+        al1.add("bye");
+        al1.add("Good night");
+
+        ArrayList<String> al2= new ArrayList<String>();
+        al2.add("Howdy");
+        al2.add("Good Evening");
+        al2.add("bye");
+        al2.add("Good night");
+    }
+
+    static void fun5(){
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(5);
+        list.add(3);
+        list.add(2733);
+        list.add(23);
+        System.out.println(list.lastIndexOf(3));//返回ArrayList中元素Obj的最后一次出现的索引
+        System.out.println(list.indexOf(5));//用于查找列表中特定元素的索引。
+        System.out.println(list.indexOf(2733));
+        System.out.println(list.indexOf(34));
+
+    }
+
+    static void fun4(){
+        //        ArrayList<String> list=new ArrayList<String>();
 //        list.add("aaa");
 //        list.add("bbb");
 //        list.add("ccc");
@@ -60,7 +93,6 @@ public class ArrayListDemo {
         }
         Collections.sort(bli);
         System.out.println(bli);*/
-        fun3();
     }
 
     static void fun3(){
